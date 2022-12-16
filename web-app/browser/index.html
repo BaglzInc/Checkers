@@ -1,0 +1,50 @@
+<!-- In HTML Comments are written like this -->
+<!-- They can all be removed for your apps -->
+<!doctype html> <!-- This first line tells browsers to expect modern standard html 5 -->
+<html lang="en-gb"> <!-- This is indicates the page is written in British English, useful for accessibility -->
+<meta charset="utf-8"> <!-- This indicates how the file is encoded. utf-8 is standard -->
+<title>Your Web-app Title</title> <!-- All pages need a title, this will be displayed in the browser's title bar -->
+<link rel="stylesheet" href="default.css"> <!-- Import style sheet – default.css -->
+<link rel="icon" href="./assets/favicon.png"> <!-- Import 'Favorites Icon' – favicon.png -->
+<script type="module" src="main.js"></script>  <!-- Load the main script. Must be type="module". Have only one of these -->
+
+    <header>
+        Checkers
+    </header>
+    
+    <aside>
+        <div id = 'rules'>
+            How to play: <br><br>
+
+            - An uncrowned player can move only towards the other
+            end of the board (yellow forward and red backwards)<br><br>
+
+            - A piece is crowned once they reach the end of the board<br><br>
+
+            - To move, first click on the piece you'd like to move and then
+            the box you'd like to move it to, if the move is legal your token
+            will be placed there<br><br>
+
+            - To jump a piece you must click on the piece you'd like to move then 
+            click on the open space where the piece would land after you jump it<br><br>
+            
+            - To cancel a double jump, click above or below the square where the piece
+            would land after its initial jump<br><br>
+
+        </div>
+        <a href="../common/out/Checkers.html">API Documentation</a>
+    </aside>
+
+    <main>
+        <div id="grid" class = 'grid'>
+        </div>
+    </main>
+
+    <footer id = 'footer'>
+        <div id = 'current_player'></div>
+    </footer>
+
+    <dialog id="result_dialog" tabindex="0" aria-label="Game over message">
+        <h2>Game Over</h2>
+        <div id="result_message">Zombies overwhelm the defenses!</div>
+    </dialog>

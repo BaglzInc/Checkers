@@ -1,0 +1,5524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Namespace: Checkers</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Namespace: Checkers</h1>
+
+    
+
+
+
+
+<section>
+
+<header>
+    
+        <h2>Checkers</h2>
+        
+    
+</header>
+
+<article>
+    <div class="container-overview">
+    
+        
+            <div class="description">Checkers.js is a module to model and play "Checkers" and related games.</div>
+        
+
+        
+
+
+<dl class="details">
+
+    
+    <dt class="tag-version">Version:</dt>
+    <dd class="tag-version"><ul class="dummy"><li>2021/22</li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-author">Author:</dt>
+    <dd class="tag-author">
+        <ul>
+            <li>William Baglole</li>
+        </ul>
+    </dd>
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="Checkers.js.html">Checkers.js</a>, <a href="Checkers.js.html#line3">line 3</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+        
+    
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <h3 class="subsection-title">Methods</h3>
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id=".can_player_jump_left"><span class="type-signature">(static) </span>can_player_jump_left<span class="signature">(board, token)</span><span class="type-signature"> &rarr; {<a href="Checkers.html#.Board">Checkers.Board</a>}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Returns a collapsed boolean map of the board. A true value indicates that thepiece that resides in that cell has the ability to jump forward and to the left where as the false values indicates it cannot.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>board</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="Checkers.html#.Board">Checkers.Board</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">A checkers board.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>token</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Checkers.token</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">the player as to which we are enquiring.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="Checkers.js.html">Checkers.js</a>, <a href="Checkers.js.html#line442">line 442</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    A collapsed boolean map with the same height and half the width.
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type"><a href="Checkers.html#.Board">Checkers.Board</a></span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id=".can_player_jump_right"><span class="type-signature">(static) </span>can_player_jump_right<span class="signature">(board, token)</span><span class="type-signature"> &rarr; {<a href="Checkers.html#.Board">Checkers.Board</a>}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Returns a collapsed boolean map of the board. A true value indicates that thepiece that resides in that cell has the ability to jump forward and to the right where as the false values indicates it cannot.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>board</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="Checkers.html#.Board">Checkers.Board</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">A checkers board.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>token</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Checkers.token</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">the player as to which we are enquiring.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="Checkers.js.html">Checkers.js</a>, <a href="Checkers.js.html#line481">line 481</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    A collapsed boolean map with the same height and half the width.
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type"><a href="Checkers.html#.Board">Checkers.Board</a></span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id=".check_diagonal"><span class="type-signature">(static) </span>check_diagonal<span class="signature">(board, token)</span><span class="type-signature"> &rarr; {<a href="Checkers.html#.Board">Checkers.Board</a>}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Returns a collapsed boolean map of the board. A true value indicates that thepiece that resides in that cell has the ability to move diagonally where as the false values indicates it cannot
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>board</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="Checkers.html#.Board">Checkers.Board</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">A checkers board.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>token</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Checkers.token</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">the player as to which we are enquiring.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="Checkers.js.html">Checkers.js</a>, <a href="Checkers.js.html#line337">line 337</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    A collapsed boolean map with the same height and half the width.
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type"><a href="Checkers.html#.Board">Checkers.Board</a></span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id=".check_finish"><span class="type-signature">(static) </span>check_finish<span class="signature">(board, king_map)</span><span class="type-signature"> &rarr; {boolean}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Returns if a game has ended,this occurs when only a single player's token andempty spaces (i.e 0 tokens) remain.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>board</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="Checkers.html#.Board">Checkers.Board</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The board to test.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>king_map</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="Checkers.html#.king_map">Checkers.king_map</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The board's related boolean king map.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="Checkers.js.html">Checkers.js</a>, <a href="Checkers.js.html#line123">line 123</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    Whether the game has ended.
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">boolean</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id=".collapse_board"><span class="type-signature">(static) </span>collapse_board<span class="signature">(board)</span><span class="type-signature"> &rarr; {<a href="Checkers.html#.Board">Checkers.Board</a>}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Returns a checkers board that is effectively void of anyunecessary spaces. Since checkers pieces can only movediagonally though a standard board has 64 spaces only 32 ofthese spaces are actually used.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>board</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="Checkers.html#.Board">Checkers.Board</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The board we want to collapse.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="Checkers.js.html">Checkers.js</a>, <a href="Checkers.js.html#line208">line 208</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    A collapsed board that has the same height but half the width.
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type"><a href="Checkers.html#.Board">Checkers.Board</a></span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id=".crown_player"><span class="type-signature">(static) </span>crown_player<span class="signature">(board)</span><span class="type-signature"> &rarr; {<a href="Checkers.html#.king_map">Checkers.king_map</a>}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Populates an empty board.- The first 3 rows (starting from the top) should only have 1 tokens interchanginingwith 0 tokens every index. Further more each row should change which token it starts with,starting with a 0 token in the top left of the board.- The last 3 rows (starting from the bottom) should only have 2 tokens interlacing with 0tokens in the same configuration as the top rows with a 2 in the bottom left of the board.- On a standard 8x8 board the two middle rows should only be populated with 0 tokens.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>board</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="Checkers.html#.Board">Checkers.Board</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">An empty Checkers board.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="Checkers.js.html">Checkers.js</a>, <a href="Checkers.js.html#line630">line 630</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    An updated king map.
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type"><a href="Checkers.html#.king_map">Checkers.king_map</a></span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id=".empty_board"><span class="type-signature">(static) </span>empty_board<span class="signature">(width<span class="signature-attributes">opt</span>, height<span class="signature-attributes">opt</span>)</span><span class="type-signature"> &rarr; {<a href="Checkers.html#.Board">Checkers.Board</a>}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Create a new empty board.Optionally with a specified width and height,otherwise returns a standard 8 wide, 8 high board.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Attributes</th>
+        
+
+        
+        <th>Default</th>
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>width</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                    8
+                
+                </td>
+            
+
+            <td class="description last">The width of the new board.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>height</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                    8
+                
+                </td>
+            
+
+            <td class="description last">The height of the new board.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="Checkers.js.html">Checkers.js</a>, <a href="Checkers.js.html#line57">line 57</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    board An empty Checkers board.
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type"><a href="Checkers.html#.Board">Checkers.Board</a></span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id=".empty_king_map"><span class="type-signature">(static) </span>empty_king_map<span class="signature">(width<span class="signature-attributes">opt</span>, height<span class="signature-attributes">opt</span>)</span><span class="type-signature"> &rarr; {<a href="Checkers.html#.king_map">Checkers.king_map</a>}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Create a new empty boolean map that is used to tellrather a piece is a king or not.Optionally with a specified width and height,otherwise returns a standard 8 wide, 8 high board.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Attributes</th>
+        
+
+        
+        <th>Default</th>
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>width</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                    8
+                
+                </td>
+            
+
+            <td class="description last">Twice the width of the new board.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>height</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                    8
+                
+                </td>
+            
+
+            <td class="description last">The height of the new board.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="Checkers.js.html">Checkers.js</a>, <a href="Checkers.js.html#line612">line 612</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    An empty king map with the same height and half the width.
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type"><a href="Checkers.html#.king_map">Checkers.king_map</a></span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id=".flip_board"><span class="type-signature">(static) </span>flip_board<span class="signature">(board)</span><span class="type-signature"> &rarr; {<a href="Checkers.html#.Board">Checkers.Board</a>}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Returns a checkers board that has been flipped about the horizontal andvertical axis. For reference if a board is flipped twice it returns to its original state.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>board</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="Checkers.html#.Board">Checkers.Board</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">A checkers board.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="Checkers.js.html">Checkers.js</a>, <a href="Checkers.js.html#line596">line 596</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    An updated board with the same height and width.
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type"><a href="Checkers.html#.Board">Checkers.Board</a></span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id=".generate_legal_row"><span class="type-signature">(static) </span>generate_legal_row<span class="signature">(row, width)</span><span class="type-signature"> &rarr; {Array}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Takes as argument a row's index and returns its each cell's legal moves.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>row</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">A row's index.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>width</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">the size of the collapsed row.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="Checkers.js.html">Checkers.js</a>, <a href="Checkers.js.html#line269">line 269</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    An array indicating the legal moves of each of the row's cell basedon its index. 'S' signifies it can only move straight while 'L' means it can move leftas well as straight and 'R' the same but right.
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Array</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id=".jump_king"><span class="type-signature">(static) </span>jump_king<span class="signature">(board, token, direction, orientation, row, col)</span><span class="type-signature"> &rarr; {<a href="Checkers.html#.Board">Checkers.Board</a>}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Returns a checkers board with a piece located in a specified row and coloumn that has jumped in a specified direction (either straight or diagonal) aswell as in a specified orientation (either forward or backwards). In the process it also removes the previous position of the piece and the piece it had jumped over. It also has a safety check where you specify the wether the piece belongs to player 1 or 2 and will only proceed if the piece matches the one specified.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>board</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="Checkers.html#.Board">Checkers.Board</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">A checkers board.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>token</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Checkers.token</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">the player as to which we are enquiring.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>direction</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">'straight'</span>
+|
+
+<span class="param-type">'diagonal'</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">indicates which direction the move is made.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>orientation</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">'forward'</span>
+|
+
+<span class="param-type">'backward'</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">indicates which way the player moves up or down the board.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>row</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">indicates the row of the piece you want to move</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>col</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">indicates the coloumn of the piece you want to move</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="Checkers.js.html">Checkers.js</a>, <a href="Checkers.js.html#line749">line 749</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    An updated board with the same height and width.
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type"><a href="Checkers.html#.Board">Checkers.Board</a></span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id=".jump_piece_bottom"><span class="type-signature">(static) </span>jump_piece_bottom<span class="signature">(board, token, direction, row, col)</span><span class="type-signature"> &rarr; {<a href="Checkers.html#.Board">Checkers.Board</a>}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Returns a checkers board with a piece located in a specified row and coloumn that has jumped another piece in a specified direction. In the process it also removesthe previous position of the piece as well as the piece you jumped. It also has a safetycheck where you specify the wether the piece belongs to player 1 or 2 and will only proceed if the piece matches the one specified. Lastly this function only moves pieces from the bottom of the board to the top.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>board</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="Checkers.html#.Board">Checkers.Board</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">A checkers board.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>token</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Checkers.token</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">the player as to which we are enquiring.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>direction</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">'left'</span>
+|
+
+<span class="param-type">'right'</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">indicates which way the player moves.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>row</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">indicates the row of the piece you want to move</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>col</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">indicates the coloumn of the piece you want to move</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="Checkers.js.html">Checkers.js</a>, <a href="Checkers.js.html#line526">line 526</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    An updated board with the same height and width.
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type"><a href="Checkers.html#.Board">Checkers.Board</a></span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id=".jump_piece_top"><span class="type-signature">(static) </span>jump_piece_top<span class="signature">(board, token, direction, row, col)</span><span class="type-signature"> &rarr; {<a href="Checkers.html#.Board">Checkers.Board</a>}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Returns a checkers board with a piece located in a specified row and coloumn that has jumped another piece in a specified direction. In the process it also removesthe previous position of the piece as well as the piece you jumped. It also has a safetycheck where you specify the wether the piece belongs to player 1 or 2 and will only proceed if the piece matches the one specified. Lastly this function only moves pieces from the top of the board to the bottom.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>board</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="Checkers.html#.Board">Checkers.Board</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">A checkers board.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>token</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Checkers.token</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">the player as to which we are enquiring.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>direction</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">'left'</span>
+|
+
+<span class="param-type">'right'</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">indicates which way the player moves.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>row</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">indicates the row of the piece you want to move</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>col</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">indicates the coloumn of the piece you want to move</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="Checkers.js.html">Checkers.js</a>, <a href="Checkers.js.html#line577">line 577</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    An updated board with the same height and width.
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type"><a href="Checkers.html#.Board">Checkers.Board</a></span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id=".move_king"><span class="type-signature">(static) </span>move_king<span class="signature">(board, token, direction, orientation, row, col)</span><span class="type-signature"> &rarr; {<a href="Checkers.html#.Board">Checkers.Board</a>}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Returns a checkers board with a piece located in a specified row and coloumn that has been moved in a specified direction (either straight or diagonal) aswell as in a specified orientation (either forward or backwards). In the process it also removes the previous position of the piece. It also has a safety check where you specify the wether the piece belongs to player 1 or 2 and will only proceed if the piecematches the one specified.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>board</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="Checkers.html#.Board">Checkers.Board</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">A checkers board.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>token</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Checkers.token</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">the player as to which we are enquiring.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>direction</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">'straight'</span>
+|
+
+<span class="param-type">'diagonal'</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">indicates which direction the move is made.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>orientation</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">'forward'</span>
+|
+
+<span class="param-type">'backward'</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">indicates which way the player moves up or down the board.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>row</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">indicates the row of the piece you want to move</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>col</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">indicates the coloumn of the piece you want to move</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="Checkers.js.html">Checkers.js</a>, <a href="Checkers.js.html#line661">line 661</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    An updated board with the same height and width.
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type"><a href="Checkers.html#.Board">Checkers.Board</a></span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id=".move_piece"><span class="type-signature">(static) </span>move_piece<span class="signature">(board, token, direction, row, col)</span><span class="type-signature"> &rarr; {<a href="Checkers.html#.Board">Checkers.Board</a>}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Returns a checkers board with a piece located in a specified row and coloumn that has been moved in a specified direction. In the process it also removesthe previous position of the piece. It also has a safety check where you specifythe wether the piece belongs to player 1 or 2 and will only proceed if the piecematches the one specified. Lastly this function only moves pieces from the bottom of the board to the top.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>board</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="Checkers.html#.Board">Checkers.Board</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">A checkers board.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>token</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Checkers.token</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">the player as to which we are enquiring.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>direction</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">'straight'</span>
+|
+
+<span class="param-type">'diagonal'</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">indicates which way the player moves.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>row</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">indicates the row of the piece you want to move</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>col</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">indicates the coloumn of the piece you want to move</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="Checkers.js.html">Checkers.js</a>, <a href="Checkers.js.html#line385">line 385</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    An updated board with the same height and width.
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type"><a href="Checkers.html#.Board">Checkers.Board</a></span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id=".move_piece_down"><span class="type-signature">(static) </span>move_piece_down<span class="signature">(board, token, direction, row, col)</span><span class="type-signature"> &rarr; {<a href="Checkers.html#.Board">Checkers.Board</a>}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Returns a checkers board with a piece located in a specified row and coloumn that has been moved in a specified direction. In the process it also removesthe previous position of the piece. It also has a safety check where you specifythe wether the piece belongs to player 1 or 2 and will only proceed if the piecematches the one specified. Lastly this function only moves pieces from the top of the board to the bottom.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>board</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="Checkers.html#.Board">Checkers.Board</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">A checkers board.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>token</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Checkers.token</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">the player as to which we are enquiring.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>direction</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">'straight'</span>
+|
+
+<span class="param-type">'diagonal'</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">indicates which way the player moves.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>row</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">indicates the row of the piece you want to move</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>col</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">indicates the coloumn of the piece you want to move</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="Checkers.js.html">Checkers.js</a>, <a href="Checkers.js.html#line426">line 426</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    An updated board with the same height and width.
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type"><a href="Checkers.html#.Board">Checkers.Board</a></span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id=".player_draw"><span class="type-signature">(static) </span>player_draw<span class="signature">(board, king_map)</span><span class="type-signature"> &rarr; {boolean}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Returns if a player can move any of his tokensin any legal direction. This includes if their tokensare kings and if they can jump the opposing player.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>board</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="Checkers.html#.Board">Checkers.Board</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The board to test.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>king_map</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="Checkers.html#.king_map">Checkers.king_map</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The board's related boolean king map.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="Checkers.js.html">Checkers.js</a>, <a href="Checkers.js.html#line153">line 153</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    Whether the player can move.
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">boolean</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id=".populate"><span class="type-signature">(static) </span>populate<span class="signature">(board)</span><span class="type-signature"> &rarr; {<a href="Checkers.html#.Board">Checkers.Board</a>}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Populates an empty board.- The first 3 rows (starting from the top) should only have 1 tokens interchanginingwith 0 tokens every index. Further more each row should change which token it starts with,starting with a 0 token in the top left of the board.- The last 3 rows (starting from the bottom) should only have 2 tokens interlacing with 0tokens in the same configuration as the top rows with a 2 in the bottom left of the board.- On a standard 8x8 board the two middle rows should only be populated with 0 tokens.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>board</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="Checkers.html#.Board">Checkers.Board</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">An empty Checkers board.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="Checkers.js.html">Checkers.js</a>, <a href="Checkers.js.html#line74">line 74</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    board An empty Checkers board.
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type"><a href="Checkers.html#.Board">Checkers.Board</a></span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id=".reform_board"><span class="type-signature">(static) </span>reform_board<span class="signature">(board)</span><span class="type-signature"> &rarr; {<a href="Checkers.html#.Board">Checkers.Board</a>}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Returns a collapsed checkers board that has been repopulatedwith its spaces. It factors in the asymetric nature of the boardand repopulates it accordingly depending on the parity of the row's index.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>board</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="Checkers.html#.Board">Checkers.Board</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">A collapsed board.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="Checkers.js.html">Checkers.js</a>, <a href="Checkers.js.html#line236">line 236</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    A repopulated board with the same height and twice the width.
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type"><a href="Checkers.html#.Board">Checkers.Board</a></span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id=".update_king_jump_top"><span class="type-signature">(static) </span>update_king_jump_top<span class="signature">(board, direction, row, col)</span><span class="type-signature"> &rarr; {<a href="Checkers.html#.king_map">Checkers.king_map</a>}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Returns an updated king map where the piece located in a specified row and coloumn willbe moved in a specified direction. The old location of the true value will be removedand replaced in the correct index as well as the true value of the piece it jumped overif that piece happened to be a king. Lastly this function only moves pieces from the topof the board towards the bottom.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>board</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="Checkers.html#.king_map">Checkers.king_map</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">A populated king map.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>direction</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">'straight'</span>
+|
+
+<span class="param-type">'diagonal'</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">indicates which direction the move is made.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>row</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">indicates the row of the piece you want to move</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>col</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">indicates the coloumn of the piece you want to move</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="Checkers.js.html">Checkers.js</a>, <a href="Checkers.js.html#line826">line 826</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    An updated king map.
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type"><a href="Checkers.html#.king_map">Checkers.king_map</a></span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id=".update_king_map_jump"><span class="type-signature">(static) </span>update_king_map_jump<span class="signature">(board, direction, row, col)</span><span class="type-signature"> &rarr; {<a href="Checkers.html#.king_map">Checkers.king_map</a>}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Returns an updated king map where the piece located in a specified row and coloumn willbe moved in a specified direction. The old location of the true value will be removedand replaced in the correct index as well as the true value of the piece it jumped overif that piece happened to be a king. Lastly this function only moves pieces from the bottomof the board towards the top.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>board</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="Checkers.html#.king_map">Checkers.king_map</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">A populated king map.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>direction</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">'straight'</span>
+|
+
+<span class="param-type">'diagonal'</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">indicates which direction the move is made.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>row</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">indicates the row of the piece you want to move</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>col</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">indicates the coloumn of the piece you want to move</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="Checkers.js.html">Checkers.js</a>, <a href="Checkers.js.html#line777">line 777</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    An updated king map.
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type"><a href="Checkers.html#.king_map">Checkers.king_map</a></span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id=".update_king_map_move"><span class="type-signature">(static) </span>update_king_map_move<span class="signature">(board, direction, row, col)</span><span class="type-signature"> &rarr; {<a href="Checkers.html#.king_map">Checkers.king_map</a>}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Returns an updated king map where the piece located in a specified row and coloumn willbe moved in a specified direction. The old location of the true value will be removedand replaced in the correct index. Lastly this function only moves pieces from the bottomof the board towards the top.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>board</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="Checkers.html#.king_map">Checkers.king_map</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">A populated king map.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>direction</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">'straight'</span>
+|
+
+<span class="param-type">'diagonal'</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">indicates which direction the move is made.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>row</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">indicates the row of the piece you want to move</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>col</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">indicates the coloumn of the piece you want to move</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="Checkers.js.html">Checkers.js</a>, <a href="Checkers.js.html#line688">line 688</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    An updated king map.
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type"><a href="Checkers.html#.king_map">Checkers.king_map</a></span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id=".update_king_map_top"><span class="type-signature">(static) </span>update_king_map_top<span class="signature">(board, direction, row, col)</span><span class="type-signature"> &rarr; {<a href="Checkers.html#.king_map">Checkers.king_map</a>}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Returns an updated king map where the piece located in a specified row and coloumn willbe moved in a specified direction. The old location of the true value will be removedand replaced in the correct index. Lastly this function only moves pieces from the topof the board towards the bottom.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>board</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="Checkers.html#.king_map">Checkers.king_map</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">A populated king map.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>direction</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">'straight'</span>
+|
+
+<span class="param-type">'diagonal'</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">indicates which direction the move is made.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>row</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">indicates the row of the piece you want to move</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>col</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">indicates the coloumn of the piece you want to move</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="Checkers.js.html">Checkers.js</a>, <a href="Checkers.js.html#line726">line 726</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    An updated king map.
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type"><a href="Checkers.html#.king_map">Checkers.king_map</a></span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id=".where_player_can_move_straight"><span class="type-signature">(static) </span>where_player_can_move_straight<span class="signature">(board, token)</span><span class="type-signature"> &rarr; {<a href="Checkers.html#.Board">Checkers.Board</a>}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Returns a collapsed boolean map of the board. A true value indicates that thepiece that resides in that cell has the ability to move forward where as the false values indicates it cannot
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>board</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="Checkers.html#.Board">Checkers.Board</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">A checkers board.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>token</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Checkers.token</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">the player as to which we are enquiring.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="Checkers.js.html">Checkers.js</a>, <a href="Checkers.js.html#line304">line 304</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    A collapsed boolean map with the same height and half the width.
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type"><a href="Checkers.html#.Board">Checkers.Board</a></span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+
+
+        
+    
+
+    
+        <h3 class="subsection-title">Type Definitions</h3>
+
+        
+                
+<h4 class="name" id=".Board">Board</h4>
+
+
+
+
+<div class="description">
+    A Board is an rectangular grid that tokens can be placed into one at a time.Tokens moves throughout the board and can be removed by being jumped over bythe opposing token
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">Array.&lt;Array.&lt;<a href="Checkers.html#.Token_or_empty">Checkers.Token_or_empty</a>>></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="Checkers.js.html">Checkers.js</a>, <a href="Checkers.js.html#line10">line 10</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+            
+                
+<h4 class="name" id=".booleans">booleans</h4>
+
+
+
+
+<div class="description">
+    A boolean is either true or false.
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">true</span>
+|
+
+<span class="param-type">false</span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="Checkers.js.html">Checkers.js</a>, <a href="Checkers.js.html#line32">line 32</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+            
+                
+<h4 class="name" id=".king_map">king_map</h4>
+
+
+
+
+<div class="description">
+    A boolean king map is a collapsed version of a rectangular grid that trackswether a piece is a king or not by assigning its equivalent position in the gridof where it would be on the board with a true or false value.
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">Array.&lt;Array.&lt;<a href="Checkers.html#.booleans">Checkers.booleans</a>>></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="Checkers.js.html">Checkers.js</a>, <a href="Checkers.js.html#line18">line 18</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+            
+                
+<h4 class="name" id=".Token">Token</h4>
+
+
+
+
+<div class="description">
+    A token is a coloured disk that players place in the grid.
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">1</span>
+|
+
+<span class="param-type">2</span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="Checkers.js.html">Checkers.js</a>, <a href="Checkers.js.html#line26">line 26</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+            
+                
+<h4 class="name" id=".Token_or_empty">Token_or_empty</h4>
+
+
+
+
+<div class="description">
+    Either a token or an empty position.
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type"><a href="Checkers.html#.Token">Checkers.Token</a></span>
+|
+
+<span class="param-type">0</span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="Checkers.js.html">Checkers.js</a>, <a href="Checkers.js.html#line38">line 38</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+            
+    
+
+    
+</article>
+
+</section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Namespaces</h3><ul><li><a href="Checkers.html">Checkers</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.10</a> on Sun Jul 10 2022 14:13:13 GMT-0400 (Eastern Daylight Saving Time)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>
